@@ -12,4 +12,4 @@ The application is driven by big datasets from three different sources and struc
 
 * [Milestone Report](http://rpubs.com/im2fast4u/CapstoneMilestoneReport)
 
-* [GitHub](https://github.com/im2fast4u/DataScienceCapstone) <br /> Code script for the Shiny application and milestone report along with other supplemental resources can be found on this Github repo 
+* [Slide Deck](http://rpubs.com/im2fast4u/CapstonePitchDeck)
