@@ -1,0 +1,52 @@
+Coursera Data Science Capstone Project
+========================================================
+date: August 2017
+
+
+Overview
+========================================================
+
+* This is a slide deck to pitch a presentation about an application developed as part of the Capstone Project for Coursera's Data Science Specialization
+* The central theme of the application is to predict the next word after a user enter a word
+* As an underlying methodology the application uses Natural Language Processing techniques to predict the next word
+
+Objective
+========================================================
+* The purpose of the Capstone Project is to develop a simple conceptual application that can predict next word based on a word that user enter. This is a similar concept used in several keyboard applications commonly found these days on mobile devices. One of the early pioneers in this fied was [Swiftkey](https://swiftkey.com/en).
+
+* The curriculum and the progression of development of the application involved several tasks, namely (1) Understanding the problem (2) Data acquisition and cleaning (3) Exploratory analysis (4) Statistical modelling (5) Predictive modelling (6) Creative exploration (7) Creating a data product (8) Creating a slide deck to pitch the product
+
+* The application is driven by big datasets from three different sources and structures of data, namely (1) Blogs (2) News and (3) Twitter. The source of the data was [HC Corpora](http://data.danetsoft.com/corpora.heliohost.org)
+
+Methodology
+========================================================
+* Once the raw data is loaded, a subset (smaple of the original data) is cleaned to prepare a text corpus. As part of the cleaning process, the content is converted to lower case and elements like punctuations, weblinks, whitespaces, numbers and profane words are scrubbed from it.
+
+* The corpus is then 'tokenized' to prepare 'n-grams' which feed the predictive models (more info about [Tokenization](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization) and [n-grams](https://en.wikipedia.org/wiki/N-gram))
+
+* In the next step n-grams are used to create matrices of one, two, three and four pairings of  words to feed the algorithms predicting the next word. These are technically referred as unigrams, bigrams, trigrams and quadgrams respectively.
+
+Shiny Application
+========================================================
+
+* The [Shiny application](https://im2fast4u.shinyapps.io/next_word_prediction_app/) has a user-input text box to enter a word for which the user would like to predict the next word
+
+* This process is driven by the four n-gram matrices which in turn are driven by text corpus which was created from sample subsets of the original data
+
+* In this way the entire prediction process is data driven and is only accurate to the level of the sample it uses as training data to make the prediction
+
+* The accuracy of the predictive model can be increased by increasing the sample size, but it comes with a trade off of increased computational resources and hence more wait time to retrive the next word
+
+Resources
+========================================================
+
+* [Shiny Application](https://im2fast4u.shinyapps.io/next_word_prediction_app/)
+
+* [Milestone Report](http://rpubs.com/im2fast4u/CapstoneMilestoneReport)
+
+* [GitHub](https://github.com/im2fast4u/DataScienceCapstone) <br /> Code script for the Shiny application and milestone report along with other supplemental resources can be found on this Github repo 
+
+* Some additional supplemental resources: <br />
+[Text mining and infrastructure in R](https://www.jstatsoft.org/article/view/v025i05)<br />
+[CRAN Task View: Natural Language Processing](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html)<br />
+[Videos](https://www.youtube.com/user/OpenCourseOnline/search?query=NLP) and [Slides](https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html) from Stanford Natural Language Processing course
